@@ -2,7 +2,7 @@
   <div>
     <div class="keyTable">
       <div style="margin-top: 10px;">
-        <el-input style="width:150px" size="small" placeholder="请输入内容" prefix-icon="el-icon-search" v-model="input">
+        <el-input style="width:250px" size="small" placeholder="请输入内容" prefix-icon="el-icon-search" v-model="input">
         </el-input>
         <el-button type="success" size="small" style="float:right;margin-right: 15px" @click="handleAdd()">添加回复</el-button>
       </div>
