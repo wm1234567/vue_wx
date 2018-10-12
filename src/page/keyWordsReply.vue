@@ -24,21 +24,12 @@
     <div class="keyEdit">
       <el-card class="box-card">
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-          <el-form-item label="活动名称" prop="name">
+          <el-form-item label="规则名称" prop="name">
             <el-input v-model="ruleForm.name"></el-input>
           </el-form-item>
-
-          <div class="key_input">
-            <el-input placeholder="规则名称"></el-input>
-          </div>
-          <div class="key_input">
-            <el-input placeholder="输入关键词" v-model="input5" class="input-with-select">
-              <el-select v-model="select" slot="prepend" placeholder="请选择">
-                <el-option label="半匹配" value="1"></el-option>
-                <el-option label="全匹配" value="2"></el-option>
-              </el-select>
-            </el-input>
-          </div>
+          <el-form-item label="关键词" prop="word">
+            <el-input v-model="ruleForm.word"></el-input>
+          </el-form-item>
           <el-row class="key_show">
             <el-col :span="2">
               <div>回复内容：<el-button icon="el-icon-plus" circle></el-button>
@@ -99,25 +90,31 @@
         select: '',
         ruleForm: {
           name: '',
-          region: '',
+          word: '',
         },
         rules: {
           name: [{
               required: true,
-              message: '请输入活动名称',
+              message: '规则名称不能为空且最多60个字',
               trigger: 'blur'
             },
             {
-              min: 3,
-              max: 5,
-              message: '长度在 3 到 5 个字符',
+              min: 1,
+              max: 60,
+              message: '规则名称不能为空且最多60个字',
               trigger: 'blur'
             }
           ],
-          region: [{
-            required: true,
-            message: '请选择活动区域',
-            trigger: 'change'
+          word: [{
+           required: true,
+              message: '关键词不能为空且最多30个字',
+              trigger: 'blur'
+            },
+            {
+              min: 1,
+              max: 30,
+              message: '关键词不能为空且最多30个字',
+              trigger: 'blur'
           }],
         }
       }
