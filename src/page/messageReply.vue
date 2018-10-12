@@ -14,8 +14,8 @@
     </el-table>
     <div class="messageEdit">
       <el-card class="box-card">
-        <el-row class="message_show">
-          <el-col :span="2">
+        <el-row class="message_show" >
+          <el-col :span="3">
             <div>回复内容：<el-button icon="el-icon-plus" circle></el-button></div></el-col>
           <el-col :span="15">
             <div class="message_div">
@@ -66,7 +66,13 @@
           name: '语音',
           content: '2文本,1图片',
         },{
-          name: '其他',
+          name: '链接',
+          content: '2文本,1图片',
+        },{
+          name: '小视频',
+          content: '2文本,1图片',
+        },{
+          name: '地理位置',
           content: '2文本,1图片',
         },],
         dialogTextVisible: false,
@@ -108,7 +114,6 @@
   .message_hover:hover {
     color: #409EFF
   }
-
   .message_show:hover .message_div {
     display: block
   }
