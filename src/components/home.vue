@@ -3,14 +3,14 @@
     <div style="width:100%;height:55px;background-color:rgb(50, 64, 87); overflow: hidden">
       <span class="demonstration" style="float:left;color:white;padding-top:17px;margin-left:1%">
         <!-- <img src="../assets/ico.png" alt=""> -->
-        <div style="color:white">微梅科技</div>
+        <div style="color:white">王孟</div>
       </span>
       <span class="demonstration" style="float:left;padding:5px;color:white;margin-left:2%;width:15%">
       </span>
       <span class="demonstration" style="float:right;padding-top:17px;margin-right:1%">
         <el-dropdown trigger="click">
           <span class="el-dropdown-link" style="color:white">
-            公众号<i class="el-icon-caret-bottom el-icon--right"></i>
+            个人中心<i class="el-icon-caret-bottom el-icon--right"></i>
           </span>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>详细信息</el-dropdown-item>
@@ -56,11 +56,11 @@
         switch (key) {
           case '1':
             this.$router.push('/automaticResponse');
-            this.breadcrumbItems = ['自动回复']
+            this.breadcrumbItems = ['首页']
             break;
           case '2':
             this.$router.push('/customMenu')
-            this.breadcrumbItems = ['自定义菜单']
+            this.breadcrumbItems = ['个人中心']
             break;
         }
       },
@@ -69,3 +69,4 @@
   }
 
 </script>
+

@@ -1,19 +1,15 @@
 <template>
-  <div>
     <el-tabs v-model="activeName" @tab-click="handleClick" style="margin-left:15px">
-    <el-tab-pane label="关键词回复" name="first">
+    <el-tab-pane label="项目一" name="first">
       <key-words-reply/>
     </el-tab-pane>
-    <el-tab-pane label="收到消息回复" name="second">
+    <el-tab-pane label="项目二" name="second">
       <message-reply/>
     </el-tab-pane>
-    <el-tab-pane label="被关注回复" name="third">
+    <el-tab-pane label="项目三" name="third">
       <pay-attention-to-reply/>
     </el-tab-pane>
   </el-tabs>
-    
-  </div>
-
 </template>
 
 <script>
