@@ -1,6 +1,6 @@
 <template>
   <div style="background-color: white;min-height:900px">
-    <div style="width:100%;height:55px;background-color:rgb(50, 64, 87); overflow: hidden">
+    <div style="width:100%;height:70px;background-color:rgb(50, 64, 87); overflow: hidden">
       <span class="demonstration" style="float:left;color:white;padding-top:17px;margin-left:1%">
         <!-- <img src="../assets/ico.png" alt=""> -->
         <div style="color:white">王孟</div>
